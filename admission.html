@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admission.css">
+    <title>University Admission Form</title>
+</head>
+<body>
+    <div class="container">
+        <h1>University Admission Form</h1>
+        <form id="admissionForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select...</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+
+            <label for="College">College Name:</label>
+            <input type="text" id="College" name="College" required>
+
+            <label for="Application-ID">Application-ID:</label>
+            <input type="text" id="Application-ID" name="Application-ID" required>
+
+            <label for="degree">Desired Degree:</label>
+            <select id="degree" name="degree" required>
+                <option value="">Select...</option>
+                <option value="bachelor">Bachelor's</option>
+                <option value="master">Master's</option>
+                <option value="phd">PhD</option>
+            </select>
+
+            <label for="Courses">Desired Courses:</label>
+            <select id="Courses" name="Courses" required>
+                <option value="">Select...</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Information Technology">Information Technology</option>
+                <option value="Electronics & Telecommunication">Electronics & Telecommunication</option>
+                <option value="Mechanical">Mechanical</option>
+                <option value="Civil">Civil</option>
+            </select>
+
+            <label for="personalStatement">Personal Statement:</label>
+            <textarea id="personalStatement" name="personalStatement" required></textarea>
+
+            <button type="submit">Submit Application</button>
+        </form>
+        <div id="message" class="message"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
